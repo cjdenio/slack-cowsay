@@ -7,6 +7,7 @@
     "@vercel/node": "^1.8.4"
   },
   "dependencies": {
-    "cowsay": "^1.4.0"
+    "cowsay": "^1.4.0",
+    "cowsay2": "^2.0.4"
   }
 }
