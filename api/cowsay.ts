@@ -10,7 +10,10 @@ export default (req: NowRequest, res: NowResponse) => {
     text:
       "```" +
       (text.includes(turtleText)
-        ? cowsay.say({ text: text, f: "turtle" })
+        ? cowsay.say({
+            text: text.replace("-f turtle", "").trim(),
+            f: "turtle",
+          })
         : cowsay.say({ text: text })) +
       "```",
   });
